@@ -9,16 +9,16 @@ Após a criação da chave, adicione-a no código dentro do arquivo news.js loca
 
 Para rodar o projeto primeiro é necessário instalar as dependências. Utilize os comandos abaixo para realizar esta tarefa.
 
-**Com Yarn**
+**Com Yarn** <br>
 `yarn`
 
-**Com NPM**
+**Com NPM**<br>
 `npm install`
 
 Agora ja podemos rodar a aplicação.
 
-**Com Yarn**
+**Com Yarn**<br>
 `yarn start`
 
-**Com NPM**
+**Com NPM**<br>
 `npm start`
