@@ -3,7 +3,7 @@
 ### Crie sua chave de acesso
 
 Para utilização da News API devemos criar uma chave de acesso. [crie sua chave aqui](https://newsapi.org/)<br>
-Após a criação da chave, adicione-a no código dentro do arquivo news.js localizado em `/src/services`. Nas duas funcões existentes no arquivo, substitua a palavra `sua chave` por sua chave de acesso criada no site.
+Após a criação da chave, adicione-a no arquivo .env.
 
 ### Iniciar o projeto
 
