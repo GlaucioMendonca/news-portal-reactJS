@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import * as Services from "../../../services/news";
+import * as Utils from '../../../utils';
 import Articles from '../../components/article'
 
 class tecnology extends Component {
@@ -12,15 +12,8 @@ class tecnology extends Component {
   }
 
   getNews = async () => {
-    // pegar todas as noticias
-    const res = await Services.getNews('technology');
-
-    // Verificando se obtivemos resposta
-    if (res.status && res.statusText === "OK") {
-      this.setState({
-        articles: res.data.articles
-      });
-    }
+    const res = await Utils.fetchNewsPage('technology')
+    this.setState({ articles: res });
   };
 
   render() {

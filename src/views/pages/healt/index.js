@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import * as Services from "../../../services/news";
-import Articles from '../../components/article'
+import Articles from '../../components/article';
+import * as Utils from '../../../utils';
 
 class healt extends Component {
   state = {
@@ -12,15 +12,8 @@ class healt extends Component {
   }
 
   getNews = async () => {
-    // pegar todas as noticias
-    const res = await Services.getNews('health');
-
-    // Verificando se obtivemos resposta
-    if (res.status && res.statusText === "OK") {
-      this.setState({
-        articles: res.data.articles
-      });
-    }
+    const res = await Utils.fetchNewsPage('health')
+    this.setState({ articles: res });
   };
 
   render() {
