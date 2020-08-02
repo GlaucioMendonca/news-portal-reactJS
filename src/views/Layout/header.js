@@ -15,7 +15,7 @@ const header = () => (
     >
       <Menu.Item key="/" className="bg-color-secundary">
         <Link to={"/"}>
-          <span> Latest News </span>
+          <span> Últimas Notícias </span>
         </Link>
       </Menu.Item>
       <Menu.Item key="/tecnology" className="bg-color-secundary">
