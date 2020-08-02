@@ -12,7 +12,7 @@ const article = ({ articles }) => (
         extra={<img width={272} alt="logo" src={item.urlToImage} />}
       >
         <List.Item.Meta
-          title={<a href={item.url}>{item.title}</a>}
+          title={<a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>}
           description={item.description}
         />
         {item.content}
